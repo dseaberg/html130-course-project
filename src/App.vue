@@ -1,33 +1,22 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/trending">Trending</router-link> |
-    <router-link to="/explore">Explore</router-link> |
-    <router-link to="/details">Details</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
+  $backgroundColor: #12151F;
+  $headerColor: #05F4B7;
+  $textColor: #FFFFFF;
+  $highlightColor: #371BB1;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  * {
+    background-color: $backgroundColor;
   }
-}
+  h1, h2, h3 {
+    color: $headerColor;
+  }
+  p {
+    color: $textColor;
+  }
+
 </style>
