@@ -12,7 +12,7 @@
         </h3>
         <div v-bind:id="'itemCollapse' + item.id" class="accordion-collapse collapse" data-bs-parent="#itemAccordion">
           <div class="accordion-body">
-            <img v-bind:src="item.imageUrl" v-bind:alt="'A photo of' + item.name">
+            <img v-bind:src="item.imageUrl" v-bind:alt="'A photo of ' + item.name">
             <p>{{ item.info }}</p>
           </div>
         </div>
