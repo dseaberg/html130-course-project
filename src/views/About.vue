@@ -5,7 +5,7 @@
     </header>
 
     <nav class="nav">
-      <Navigation />
+      <Navigation currentPage="about" />
     </nav>
 
     <section class="main">

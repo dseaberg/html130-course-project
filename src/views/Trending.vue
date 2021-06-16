@@ -6,7 +6,7 @@
     </header>
 
     <nav class="nav">
-      <Navigation />
+      <Navigation currentPage="trending" />
     </nav>
 
     <section class="main">
