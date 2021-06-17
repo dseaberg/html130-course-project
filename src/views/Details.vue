@@ -58,7 +58,8 @@
         //itemType: 'movie',
         itemType: 'person',
         imageBaseUrl: '',
-        imageWidth: '',
+        imageWidthMovie: '',
+        imageWidthPerson: '',
         item: {},
         showError: false
       }

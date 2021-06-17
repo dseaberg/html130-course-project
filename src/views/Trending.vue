@@ -13,8 +13,10 @@
       <h1>Today's Trends</h1>
 
       <TrendingItems sectionHeading="Trending Movies"
+                     sectionId="1"
                      v-bind:trendingItems="trendingMovies" />
       <TrendingItems sectionHeading="Trending People"
+                     sectionId="2"
                      v-bind:trendingItems="trendingPeople" />
 
     </section>

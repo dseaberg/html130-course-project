@@ -1,7 +1,7 @@
 <template>
   <div class="trendingItemsContainer">
     <h2>{{ sectionHeading }}</h2>
-    <div class="accordion" id="itemAccordion">
+    <div class="accordion" v-bind:id="'itemAccordion' + sectionId">
 
       <!-- start v-for -->
       <div class="accordion-item" v-for="item in trendingItems">
@@ -10,7 +10,7 @@
             {{ item.name }}
           </button>
         </h3>
-        <div v-bind:id="'itemCollapse' + item.id" class="accordion-collapse collapse" data-bs-parent="#itemAccordion">
+        <div v-bind:id="'itemCollapse' + item.id" class="accordion-collapse collapse" v-bind:data-bs-parent="'#itemAccordion' + sectionId">
           <div class="accordion-body">
             <img v-bind:src="item.imageUrl" v-bind:alt="'A photo of ' + item.name">
             <p>{{ item.info }}</p>
@@ -28,6 +28,7 @@ export default {
   name: 'TrendingItems',
   props: {
     sectionHeading: String,
+    sectionId: String,
     trendingItems: Object
   }
 }
